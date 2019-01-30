@@ -2,13 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>CifraMundo</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Cifrando!</h1>
+
+</div>
+
+        <!-- PANTALLA 1 DE BIENVENIDA -->
+      <div id="principal" align="center" bgcolor="black">
+  <h4>¡Estás entrando al Ciframundo!👩🏻‍💻 </h4>
+  <p>En está página podrás cifrar y descifrar palabras utilizando el "Cifrado César". 
+  Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones más adelante en el mismo alfabeto.
+  <br></br> 
+    <img src="https://kifanga.com/wp-content/uploads/2018/05/caesar-cipher.png" align="center" width="300" height="150">
+<br></br>
+   ¡El numero de posiciones podrás elegirlo tú! Pero es importante que guardes el número para que tú u otra persona puedan descifrar los mensajes.</p> <!-- EXPLICACION CIFRADO CESAR -->
+  
+     <br></br> 
+      <br></br>
+ <button onclick="encodeText()" id="encode">Cifrar un Texto 🔒 </button>
+ <button onclick="decodeText()" id="decode">Descifrar un Texto 🔑</button>
+
+    
     </div>
+
+
+          <!-- PANTALLA 2 OPCION CIFRAR-->
+
+     <div id="pantalla_cifrar" class="hidden"> 
+      <textarea id="campo_cifrar" rows="08" cols="20" placeholder="Escribe tu texto a cifrar aquí"></textarea> <!-- campo para escribir el Texto que se desea cifrar -->
+      <input type="number" id="positions" size="5" min="01" max="" placeholder="Numero de Posiciones"> 
+      <br></br>
+      <br></br>
+      <output name="texto_cifrado" rows="08" cols="20" align="right">Tu texto Cifrado es:</output> <!--campo para dar el resultado del texto Cifrado --> 
+       <br></br>
+        <br></br> 
+        <input type="button" onclick="homePage()" id="Home">Pagina de Inicio </input>
+
+    </div>
+    
+          <!--PANTALLA 3 OPCION DESCIFRAR-->
+
+     <div id="pantalla_descifrar" class="hidden"> 
+      <textarea name="campo_descifrar" rows="08" cols="20" placeholder= "Escribe el texto que deseas Descifrar aquí"></textarea> <!-- campo para escribir el Texto que se desea descifrar -->
+      <input type="number" id="positions" size="5" min="01" max="" placeholder="Numero de Posiciones"> .
+      <br></br>
+      <br></br>
+      <output name="texto_descifrado" rows="08" cols="20" align="right">Tu texto Descifrado es:</output> <!--campo para dar el resultado del texto Descifrado --> 
+
+
+
+
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
