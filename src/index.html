@@ -13,17 +13,17 @@
         <!-- PANTALLA 1 DE BIENVENIDA -->
       <div id="principal" align="center" bgcolor="black">
   <h4>¡Estás entrando al Ciframundo!👩🏻‍💻 </h4>
-  <p>En está página podrás cifrar y descifrar palabras utilizando el "Cifrado César". 
+  <p>En está página podrás cifrar y descifrar palabras utilizando el "Cifrado César", ya sea para crear mensajes secretos, guardar datos importantes, etc. 
   Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones más adelante en el mismo alfabeto.
-  <br></br> 
+  <br> 
     <img src="https://kifanga.com/wp-content/uploads/2018/05/caesar-cipher.png" align="center" width="300" height="150">
-<br></br>
+<br>
    ¡El numero de posiciones podrás elegirlo tú! Pero es importante que guardes el número para que tú u otra persona puedan descifrar los mensajes.</p> <!-- EXPLICACION CIFRADO CESAR -->
   
-     <br></br> 
-      <br></br>
- <button onclick="encodeText()" id="encode">Cifrar un Texto 🔒 </button>
- <button onclick="decodeText()" id="decode">Descifrar un Texto 🔑</button>
+     <br> 
+      <br>
+ <button id="encode">Cifrar un Texto 🔒 </button>
+ <button id="decode">Descifrar un Texto 🔑</button>
 
     
     </div>
@@ -31,32 +31,38 @@
 
           <!-- PANTALLA 2 OPCION CIFRAR-->
 
-     <div id="pantalla_cifrar" class="hidden"> 
-      <textarea id="campo_cifrar" rows="08" cols="20" placeholder="Escribe tu texto a cifrar aquí"></textarea> <!-- campo para escribir el Texto que se desea cifrar -->
+     <div id="pantalla_cifrar" class="hidden" align="center"> 
+      <input type="text" id="campo_cifrar" placeholder="Escribe tu texto a cifrar aquí"> <!-- campo para escribir el Texto que se desea cifrar -->
       <input type="number" id="positions" size="5" min="01" max="" placeholder="Numero de Posiciones"> 
-      <br></br>
-      <br></br>
-      <output name="texto_cifrado" rows="08" cols="20" align="right">Tu texto Cifrado es:</output> <!--campo para dar el resultado del texto Cifrado --> 
-       <br></br>
-        <br></br> 
-        <input type="button" onclick="homePage()" id="Home">Pagina de Inicio </input>
+      <br>
+     
+     <button id="cipher" >Cifrar</button>
+      <br>
+      <p>Tu texto Cifrado es:<br> <output type="text" id="resultadoTot"> </output> </p> <!--campo para dar el resultado del texto Cifrado --> 
+       <br>
+        <br> 
+        <button id="Home"> 🏡 </button>
 
     </div>
     
           <!--PANTALLA 3 OPCION DESCIFRAR-->
 
-     <div id="pantalla_descifrar" class="hidden"> 
-      <textarea name="campo_descifrar" rows="08" cols="20" placeholder= "Escribe el texto que deseas Descifrar aquí"></textarea> <!-- campo para escribir el Texto que se desea descifrar -->
-      <input type="number" id="positions" size="5" min="01" max="" placeholder="Numero de Posiciones"> .
-      <br></br>
-      <br></br>
-      <output name="texto_descifrado" rows="08" cols="20" align="right">Tu texto Descifrado es:</output> <!--campo para dar el resultado del texto Descifrado --> 
+     <div id="pantalla_descifrar" class="hidden" align="center"> 
+       <input type="text" id="campo_descifrar" placeholder="Escribe tu texto a descifrar aquí"> <!-- campo para escribir el Texto que se desea descifrar -->
+      <input type="number" id="positions2" size="5" min="01" max="" placeholder="Numero de Posiciones"> .
+      <br>
+     
+      <button id="decipher">Descifrar</button>
+       <br>
+     <p>Tu texto Descifrado es:<br><br> <output type="text" id="resultadoTot2"> </output> </p> <!--campo para dar el resultado del texto Descifrado --> 
+      <br>
+      <button id="Home2"> 🏡 </button>
+      
+      </div>
 
-
-
-
+       </body>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>
-  </body>
+
 </html>
