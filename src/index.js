@@ -1,23 +1,29 @@
 
 function encodeWeb() {
-	document.getElementById("pantalla_cifrar").style.display = "block";
-	document.getElementById("principal").innerHTML = "";  /* LANZA LA PANTALLA PARA CIFRAR */
+	document.getElementById("web_cipher").style.display = "block";
+	document.getElementById("principal").setAttribute("class","hidden"); /* LANZA LA PANTALLA PARA CIFRAR */
 
 }
 	document.getElementById("encode").addEventListener("click", encodeWeb);
 
 function decodeWeb() {
-	document.getElementById("pantalla_descifrar").style.display = "block"; /*LANZA LA PANTALLA PARA DESCRIFRAR */
+	document.getElementById("web_decipher").style.display = "block"; /*LANZA LA PANTALLA PARA DESCRIFRAR */
 	document.getElementById("principal").innerHTML = "";	
 
 }
 	document.getElementById("decode").addEventListener("click", decodeWeb);
+
+
 
 /*MANDA A LA PANTALLA DE INICIO1 */
 
 function homePage() { 
 	location.reload(); 
 }
+
+
+
+	//EventListeners para botones de Home, Cifrar y Descifrar
 
 	document.getElementById("Home2").addEventListener("click", homePage);
 
@@ -27,29 +33,30 @@ function homePage() {
 
 	document.getElementById("decipher").addEventListener("click", decoding);
 
+
+
 //FUNCION CIFRAR EL MENSAJE!!!!
 function encoding() {
 	let keyNumber  = parseInt(document.getElementById("positions").value); //GUARDAR VALOR DEL OFFSET
-	let message = document.getElementById("campo_cifrar").value.toUpperCase(); // GUARDAR VALOR DEL INPUT MENSAJE EN MAYUSCULAS
+	let message = document.getElementById("space_cipher").value.toUpperCase(); // GUARDAR VALOR DEL INPUT MENSAJE EN MAYUSCULAS
 	
 	
-	let documentJs = window.cipher.encode(keyNumber, message);
+		let documentJs = window.cipher.encode(keyNumber, message);
 
-	document.getElementById('resultadoTot').innerHTML = documentJs;
+			document.getElementById('result').innerHTML = documentJs;
 
 }
 
 
 
-    //FUNCION DESCIFRAR EL MENSAJE!!!!
-	function decoding() {
-		let keyNumber  = parseInt(document.getElementById("positions2").value); //GUARDAR VALOR DEL OFFSET
-		let message = document.getElementById("campo_descifrar").value.toUpperCase(); // GUARDAR VALOR DEL INPUT MENSAJE EN MAYUSCULAS
+//FUNCION DESCIFRAR EL MENSAJE!!!!
+function decoding() {
+	let keyNumber  = parseInt(document.getElementById("positions2").value); //GUARDAR VALOR DEL OFFSET
+	let message = document.getElementById("space_decipher").value.toUpperCase(); // GUARDAR VALOR DEL INPUT MENSAJE EN MAYUSCULAS
 	
-			let documentJs2 = window.cipher.decode(keyNumber, message);
+		let documentJs2 = window.cipher.decode(keyNumber, message);
 
-			document.getElementById('resultadoTot2').innerHTML = documentJs2;
-    
+			document.getElementById('result2').innerHTML = documentJs2;    
 
 }
     

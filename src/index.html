@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>CifraMundo</title>
+    <title>S.H.I.E.L.D.</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+
   </head>
   <body>
-    <div id="root">
 
-</div>
+      <h4 class="titles" align="center"> MISSION LOCATION **TOP SECRET** </h4>
+
 
         <!-- PANTALLA 1 DE BIENVENIDA -->
-      <div id="principal" align="center" bgcolor="black">
-  <h4>¡Estás entrando al Ciframundo!👩🏻‍💻 </h4>
-  <p>En está página podrás cifrar y descifrar palabras utilizando el "Cifrado César", ya sea para crear mensajes secretos, guardar datos importantes, etc. 
-  Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones más adelante en el mismo alfabeto.
-  <br> 
-    <img src="https://kifanga.com/wp-content/uploads/2018/05/caesar-cipher.png" align="center" width="300" height="150">
-<br>
-   ¡El numero de posiciones podrás elegirlo tú! Pero es importante que guardes el número para que tú u otra persona puedan descifrar los mensajes.</p> <!-- EXPLICACION CIFRADO CESAR -->
+
+    <div id="principal" align="center" class="styling" bgcolor="black">
+        <p class="introduction"> This is the S.H.I.E.L.D's Shell, a portal for Security Agents. If you are the Commander in charge, this portal will help you to encrypt the location for your Sergeant's mission. If you're a Sergeant and you have been asigned to a mission, then you can decrypt the message your Commander sent you, so you can reveal the position of your mission.
+        <br> 
+        <br>
+        <br>
+        *There is a "Key" you must add, this is Sergeant's ID number*</p> <!-- EXPLICACION CIFRADO -->
   
-     <br> 
-      <br>
- <button id="encode">Cifrar un Texto 🔒 </button>
- <button id="decode">Descifrar un Texto 🔑</button>
+        <br> 
+        <br>
+          <button id="encode" class="effect1">Commander </button>
+          <button id="decode" class="effect1">Sergeant </button>
 
     
     </div>
@@ -31,36 +37,35 @@
 
           <!-- PANTALLA 2 OPCION CIFRAR-->
 
-     <div id="pantalla_cifrar" class="hidden" align="center"> 
-      <input type="text" id="campo_cifrar" placeholder="Escribe tu texto a cifrar aquí"> <!-- campo para escribir el Texto que se desea cifrar -->
-      <input type="number" id="positions" size="5" min="01" max="" placeholder="Numero de Posiciones"> 
+    <div id="web_cipher" class="hidden styling" align="center"> 
+      <input type="text" id="space_cipher" class="effect3" placeholder="Write location here without spaces"> <!-- campo para escribir el Texto que se desea cifrar --><br>
+      <input type="number" id="positions" class="effect4" size="5" min="01" max="" placeholder="Key"> 
       <br>
      
-     <button id="cipher" >Cifrar</button>
+      <button id="cipher" class="effect6" >Encrypt</button>
       <br>
-      <p>Tu texto Cifrado es:<br> <output type="text" id="resultadoTot"> </output> </p> <!--campo para dar el resultado del texto Cifrado --> 
-       <br>
-        <br> 
-        <button id="Home"> 🏡 </button>
+      <p id="lineal">Hidden Message is:<br><br> <output type="text" class="effect5" id="result"> </output> </p> <!--campo para dar el resultado del texto Cifrado --> 
+        
+      <button id="Home" class="effect2">Back to Shell 🦅 </button>
 
     </div>
     
           <!--PANTALLA 3 OPCION DESCIFRAR-->
 
-     <div id="pantalla_descifrar" class="hidden" align="center"> 
-       <input type="text" id="campo_descifrar" placeholder="Escribe tu texto a descifrar aquí"> <!-- campo para escribir el Texto que se desea descifrar -->
-      <input type="number" id="positions2" size="5" min="01" max="" placeholder="Numero de Posiciones"> .
-      <br>
+    <div id="web_decipher" class="hidden styling" align="center"> 
+        <input type="text" class="effect3" id="space_decipher" placeholder="Write Encrypted Message Here"> <!-- campo para escribir el Texto que se desea descifrar --><br>
+        <input type="number" class="effect4" id="positions2" size="5" min="01" max="" placeholder="Key">
+        <br>
      
-      <button id="decipher">Descifrar</button>
-       <br>
-     <p>Tu texto Descifrado es:<br><br> <output type="text" id="resultadoTot2"> </output> </p> <!--campo para dar el resultado del texto Descifrado --> 
-      <br>
-      <button id="Home2"> 🏡 </button>
+        <button id="decipher" class="effect6">Decrypt</button>
+        <br>
+        <p id="lineal">Mission location is:<br><br> <output type="text" class="effect5" id="result2"> </output> </p> <!--campo para dar el resultado del texto Descifrado --> 
+     
+        <button id="Home2" class= "effect2"> Back to Shell 🦅</button>
       
-      </div>
+    </div>
 
-       </body>
+  </body>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

@@ -1,9 +1,183 @@
+body {
+
+	background: url("../src/Img/1.jpeg"); /* Imagen normal*/
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+
+
+.styling {
+
+	background-image: url("../src/Img/2.jpg"); /* Imagen con desenfoque */
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 60%;
+	top:20%;
+	position: fixed;
+	padding: 20px 20px 20px 20px; 
+	width: 58%; 
+	margin-left: 20%;
+	opacity: 1;
+	box-shadow: -20px -20px 50px black,15px 15px 20px black;
+	
+}
+
+
+
+.titles {
+
+	text-align: center;
+	font-weight: lighter;
+	font-size: 25px;
+	font-family: 'Press Start 2P', cursive;
+	color: silver;
+	text-shadow: 3px 3px 15px black;
+	margin-top:3%;
+	margin-left:40%;
+	width: 100%;
+	
+}
+
+
+.introduction {
+
+	font-weight: bold;
+	font-size: 150%;
+	font-family: 'Bree Serif', serif;
+	color: black;
+	text-shadow: 0px -2px 9px silver;
+
+}
+
+.effect1 {
+	border-style: none;
+	background-color: black;
+	padding: 1%;
+	width: 20%;
+	margin-right: 6%;
+	margin-bottom: 1%;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Rokkitt', serif;
+	color: silver;
+	font-size: 150%;
+	box-shadow: -5px -5px 5px #E0FFFF, 3px 3px 3px black;
+
+}
+
+
+.effect1:hover {
+	
+	color: #81F7F3;
+	text-decoration: blink;
+
+}
+
+.effect2 {
+	border-style: none;
+	background-color: silver;
+	padding: 1%;
+	width: 20%;
+	margin-top: 15%;
+	margin-left: 60%;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Rokkitt', serif;
+	color: black;
+	font-size: 125%;
+	box-shadow: -5px -5px 5px black, 5px 5px 5px black;
+
+
+}
+
+
+.effect2:hover {
+
+	background-color: #0B3861;
+	text-shadow: -1px 2px 1px white;
+	margin-top: 15%;
+	margin-left: 60%;
+
+}
+
+
+.effect3 {
+
+	border-style: none;
+	border-radius: 25px;
+	width: 27%;
+	padding: 2%;
+	margin-top: 5%;
+	box-shadow: 0px 0px 0px, 5px 5px 5px black;
+
+
+}
+
+
+.effect4 {
+
+	border-style: none;
+	width: 8%;
+	padding: 1%;
+	box-shadow: 0px 0px 0px, 5px 5px 5px black;
+
+
+}
+
+
+
+.effect5 {
+
+	font-weight: bold;
+	font-size: 120%;
+	font-family: 'Press Start 2P', cursive;
+
+
+}
+
+
+.effect6 {
+
+	border-style: none;
+	background-color: black;
+	padding: 1%;
+	width: 10%;
+	margin-right: 0%;
+	margin-bottom: 1%;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Rokkitt', serif;
+	color: silver;
+	font-size: 120%;
+	box-shadow: -5px -5px 5px #E0FFFF, 3px 3px 3px black;
+
+
+}
+
+.effect6:hover {
+
+	color: #81F7F3;
+	text-decoration: blink;
+
+}
+
+#lineal {
+
+	font-weight: bold;
+	font-family: 'Bree Serif', serif;
+	color: black; 
+
+}
+
 
 
 .hidden {
 	display:none;
 }
-
 
 
 input {
